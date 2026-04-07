@@ -170,7 +170,7 @@ transform_stat_info (char typeflag, struct tar_stat_info *stat_info)
       break;
     }
 
-  if (one_top_level_option)
+  if (one_top_level_dir)
     enforce_one_top_level (&stat_info->file_name);
   return true;
 }
